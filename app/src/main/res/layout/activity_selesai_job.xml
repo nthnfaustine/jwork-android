@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelesaiJobActivity"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invoice ID"
+        android:textSize="30sp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/staticJobseekerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Jobseeker Name:"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/jobseeker_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="TextView"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/staticInvoiceDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Invoice Date"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/invoice_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="TextView"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/staticPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Payment Type"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/payment_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="TextView"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/staticInvoiceStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Invoice Status"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/invoice_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="TextView"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/staticRefCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Refferal Code"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/referral_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="No Referral Code"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/staticJobNameSelesai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Job Name:"
+        android:layout_marginTop="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/job_name_selesai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Job Name"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/fee_selesai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Fee"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:src="@android:color/darker_gray"
+        android:layout_marginTop="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/staticTotalFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Total Fee"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/total_fee_selesai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Total Fee"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="CANCEL"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:id="@+id/btnFinish"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="FINISH"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
