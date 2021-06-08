@@ -28,6 +28,8 @@ public class SelesaiJobActivity extends AppCompatActivity {
     private String jobName;
     private int jobFee;
     private String invoiceStatus;
+    private String refCode;
+    private JSONObject bonus;
 
     //component finalization
     private TextView judul;
@@ -151,12 +153,21 @@ public class SelesaiJobActivity extends AppCompatActivity {
                         date = jsonInvoice.getString("date");
                         paymentType = jsonInvoice.getString("paymentType");
                         totalFee = jsonInvoice.getInt ("totalFee");
+                        refCode = "---";
+                        try{
+                            bonus = jsonInvoice.getJSONObject("bonus");
+                            refCode = bonus.getString("referralCode");
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
 
                         judul.setText(String.valueOf(invoiceId));
                         invoice_date.setText(date.substring(0,10));
                         payment_type.setText(paymentType);
                         total_fee_selesai.setText(String.valueOf(totalFee));
                         invoice_status.setText(invoiceStatus);
+                        referral_code.setText(refCode);
 
                         JSONObject jsonCustomer = jsonInvoice.getJSONObject("jobseeker");
                         jobseekerName = jsonCustomer.getString("name");

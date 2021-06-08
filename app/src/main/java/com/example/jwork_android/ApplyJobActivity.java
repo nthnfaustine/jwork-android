@@ -116,7 +116,7 @@ public class ApplyJobActivity extends AppCompatActivity {
                                             } else {
                                                 Toast.makeText(ApplyJobActivity.this, "Referral code applied!", Toast.LENGTH_LONG).show();
                                                 //Set Total Price
-                                                totalFeeTv.setText(Double.toString(jobFee));
+                                                totalFeeTv.setText(Double.toString(jobFee + extraFee));
                                             }
                                         }
                                     } catch (JSONException e) {
